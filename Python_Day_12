@@ -1,0 +1,807 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMSNveycIYzgGw/2dHiadQA",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/manirajuallu/DA-Python-/blob/main/Python_Day_12\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AGPHU5kyn0BP",
+        "outputId": "94220885-195b-4e3d-e163-83b2296bc07f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ANALYTICS\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Given the string \"DATAANALYTICSPROGRAMMING\" EXTRACT \"ANALYTICS\" USING SLICING.\n",
+        "a='\"DATAANALYTICSPROGRAMMING'\n",
+        "print(a[5:14])"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a string from the user and print the middle 5 characters.assume the string length is odd\n",
+        "a='DATAANALYTICSPROGRAMMING'\n",
+        "print(a[10:15])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sgRg_ruSotol",
+        "outputId": "c9040447-fcad-41ea-c552-391f82cb1696"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ICSPR\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# given the string \"PYTHONPROGRAMMING\" Extract the string 'PROGRAMMING' IN REVERSE\n",
+        "a='PYTHONPROGRAMMING'\n",
+        "print(a[-1:5:-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rF1MGpigrRJf",
+        "outputId": "61ea2320-b869-415b-e283-c4d819113bcf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "GNIMMARGORP\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# take a string from the users and print the first half of the string in order.\n",
+        "a='PYTHONPROGRAMMING'\n",
+        "print(a[8::-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xqfPsgWWuURS",
+        "outputId": "32e7fe29-50a4-43d1-88c2-c23c916958dc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ORPNOHTYP\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given the string 'ABCDEFGHIJKLMNO' Exract every third  charcter strating from index 1\n",
+        "a='ABCDEFGHIJKLMNO'\n",
+        "print(a[1:-1:3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NdNQ7t45vT21",
+        "outputId": "8e414a77-e4c1-4979-b02c-b3b38de969d7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "BEHKN\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a string from the users and print the string after removing the frist 3 and last 3 charcters\n",
+        "a='ABCDEFGHIJKLMNO'\n",
+        "print(a[3:-3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Wk_Z1vYmwBxF",
+        "outputId": "8128f6d2-b71e-4036-b4da-0c4e77051ce4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "DEFGHIJKL\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given the string is \"PROGRAMMINGLANGUAGE\" extract \"GRAMMING\" using the negative indexing\n",
+        "a='PROGRAMMINGLANGUAGE'\n",
+        "print(a[3:-8])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zrj1wHDCwvh8",
+        "outputId": "fa07ab62-4ec1-417b-f1de-c178e6230697"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "GRAMMING\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a string from the user and print the characters from the last index to the middle in reverse order\n",
+        "a='PROGRAMMINGLANGUAGE'\n",
+        "print(a[-1:-12:-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oFVO7mLRxb8N",
+        "outputId": "aaee462b-f6b9-4402-c8a1-5238f76baf46"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "EGAUGNALGNI\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# given the string 'ABCDEFGHIJKLMN' extract the last 7 chracterts and print in them in reverse order\n",
+        "a='ABCDEFGHIJLMN'\n",
+        "print(a[-1:-7:-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UhyrCobO0f4-",
+        "outputId": "85ae7dc9-4ec6-4aec-8c50-387c247c29fd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "NMLJIH\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a string from the users and print the characters at even index positions in reverse order\n",
+        "a='PROGRAMMINGLANGUAGE'\n",
+        "print(a[-1::-2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qKGSQQb51M_e",
+        "outputId": "e1890f27-e77c-42da-c78a-82f43a9f305f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "EAGAGIMROP\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a[:1:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "txS0dzNS-RZG",
+        "outputId": "e8038434-8020-47fe-f96f-7970ee3242d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "P\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='Python'\n",
+        "b='Programming'\n",
+        "print(a+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yOKU4wW8_Ray",
+        "outputId": "7d40efb8-faed-4bf9-f988-3fb7aeeea618"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "PythonProgramming\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='Python'\n",
+        "b=' Programming'\n",
+        "c=' is doing'\n",
+        "d=' well by Prasanna'\n",
+        "e=a+b+c+d\n",
+        "print(e)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xKEVUadt_mMd",
+        "outputId": "c04f7c58-30e1-4f01-fe5a-619bf8f2cf59"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python Programming is doing well by Prasanna\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a * 5)\n",
+        "print('*'*5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bFIPgYDs_ykx",
+        "outputId": "0e50bc0f-fdd1-48fe-a57a-c4072a67a532"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "PythonPythonPythonPythonPython\n",
+            "*****\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(len(a))\n",
+        "print(len(b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qYHPyZwwBPgo",
+        "outputId": "029ff924-6fda-4f9f-fad4-4c4dac0e4fce"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "12\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#membership operators\n",
+        "print('Python' in a)\n",
+        "print('Python' not in a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_uzGoXieBlk6",
+        "outputId": "bbe4a94c-a4ad-445b-bc92-e55b9c23a541"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a>b)\n",
+        "print(a<b)\n",
+        "print(a!=b)\n",
+        "print(a==b)\n",
+        "print(a>=b)\n",
+        "print(a<=b)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "i2Kx21F7CO7u",
+        "outputId": "8de34753-dac4-4086-ef55-f73a045d1b5d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Formatted line\n",
+        "a='maniraju'\n",
+        "b=20\n",
+        "print(\"my name is {} and my age is {}\".format(a,b))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6XX8BGZVDjKQ",
+        "outputId": "c23923b1-e71f-4967-e843-771a44a3aa96"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my name is maniraju and my age is 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a='mani'\n",
+        "print(f\"my name is {a} \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SuOxetJQEDN2",
+        "outputId": "15fa12bf-93a7-488d-b684-7e5dfe3b23dd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "my name is mani \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a=10.878675\n",
+        "b=6.7675\n",
+        "c=a+b\n",
+        "print(c)\n",
+        "print(f\"{a+b:.1f}\")\n",
+        "print(f\"{c:.1f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AWLCJgZ8EjAy",
+        "outputId": "157cd196-3721-480a-f933-22f0c425b64f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "17.646175\n",
+            "17.6\n",
+            "17.6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "value=0.85659\n",
+        "print(f\"{value:.3%}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Eg7RWuXGidd",
+        "outputId": "41ca6b07-50d6-4371-ac43-fb4ee973c028"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "85.659%\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "value=1.23345\n",
+        "print(f\"{value:.2f}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TqobwGsTGiXg",
+        "outputId": "e3e00afc-a888-4b53-b888-f8210a362867"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1.23\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "print(\"hello\\nPython\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YCvCAKhgIJX3",
+        "outputId": "141f025c-2c99-4c42-b9e8-622ea75e75f6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n",
+            "Python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hello\\tPython\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uqjk94xUItWp",
+        "outputId": "699a328c-4163-41b2-b604-a1aa2929d4a7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\tPython\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print('it\\'s python')\n",
+        "print(\"it\\\"s python\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vttKINqAI5CR",
+        "outputId": "503841a1-9a46-47d4-c353-faaf4bdae28f"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "it's python\n",
+            "it\"s python\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take the user's frist and last name as input and display thier full name with a space between them\n",
+        "first = input()\n",
+        "last = input()\n",
+        "print(first+last)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HocVZpb20gpR",
+        "outputId": "ce9c08b6-3688-409f-de8b-cc8bf6e959f1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mani\n",
+            " raju\n",
+            "mani raju\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Take two number as input and display thier sum in the format: the sum of 10 and 20 is 30.\n",
+        "a=int(input())\n",
+        "b=int(input())\n",
+        "c=a+b\n",
+        "print(f\"The sum of {a} and {b} is {c}\")"
+      ],
+      "metadata": {
+        "id": "LP_eiEw31Rjq",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "d2265605-fc10-49f0-dcfe-7c7eed21ae4b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "20\n",
+            "The sum of 10 and 20 is 30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Take a student's name, age, and percentage as input and diplay them in a single sentence with percentage up to 2 demical places.\n",
+        "name=input()\n",
+        "age=input()\n",
+        "percentage=input()\n",
+        "print(f\"i am {name} and my age is {age} and my degree percentage is {percentage}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w51Ew9RoMiID",
+        "outputId": "cf7d1f31-a85b-49ee-b529-816337f4539a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "maniraju\n",
+            "20\n",
+            "68.88\n",
+            "i am maniraju and my age is 20 and my degree percentage is 68.88\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Take a word as input and diplay is 5 times in a single line with a space between each repetition.\n",
+        "word=input()\n",
+        "print(f\"{word} \"* 5)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TV-depdTNxQ2",
+        "outputId": "09503b0f-3aa8-421d-bd21-13debf1d566a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "mani\n",
+            "mani mani mani mani mani \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Take a first name and a city name as input and display: my name is rahul and i am from hyderabad.\n",
+        "name=input()\n",
+        "city=input()\n",
+        "print(f\"My name is {name} and i am from {city}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ArtW2srkQDGn",
+        "outputId": "a079bdea-95c6-4b46-e1c9-875af79ece43"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rahul\n",
+            "Hyderabad\n",
+            "My name is Rahul and i am from Hyderabad\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
